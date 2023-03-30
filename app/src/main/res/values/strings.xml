@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RequeriOn</string>
+    <string name="label_inputSus">Number SUS: </string>
+    <string name="label_inputCpf">CPF: </string>
+    <string name="hint_sus">000 0000 0000 0000</string>
+    <string name="hint_cpf">___.___.___-__</string>
+    <string name="activityLoginTitle">Login to your Account</string>
+    <string name="createAccount">Create Account</string>
+    <string name="text_buttonLogin">Login</string>
+    <string name="msgInputIncorrect">Complete all the fields correctly</string>
+    <string name="msgIncorrectLogin">Incorrect SUS number or CPF</string>
+    <string name="text_requirements">Requirements</string>
+    <string name="profile">Profile</string>
+    <string name="chat">Chat</string>
+    <string name="notifications">Notifications</string>
+    <string name="about_us">About Us</string>
+    <string name="log_out">Log Out</string>
+    <string name="name">Name: </string>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="248dp"
+        android:background="@drawable/gridradius"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/activityLoginTitle"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/ed_cpf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/textedit"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/hint_cpf"
+        android:inputType="number"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="20dp"
+        app:mask="___.___.___-__"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_cpf"
+        android:importantForAutofill="no"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/ed_sus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/textedit"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/hint_sus"
+        android:inputType="number"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="20dp"
+        app:mask="___ ____ ____ ____"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email"
+        android:importantForAutofill="no"
+        tools:ignore="VisualLintTextFieldSize" />
+
+
+    <TextView
+        android:id="@+id/textView_cpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/label_inputCpf"
+        android:textColor="@color/blue"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_sus" />
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/label_inputSus"
+        android:textColor="@color/blue"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView_createAccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/createAccount"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_cpf" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/poppins"
+        android:paddingVertical="16dp"
+        android:text="@string/text_buttonLogin"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_createAccount"
+        tools:ignore="VisualLintButtonSize" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

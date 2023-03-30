@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RequeriOn</string>
+    <string name="label_inputSus">Número SUS: </string>
+    <string name="label_inputCpf">CPF: </string>
+    <string name="hint_sus">000 0000 0000 0000</string>
+    <string name="hint_cpf">___.___.___-__</string>
+    <string name="activityLoginTitle">Acesse a sua Conta: </string>
+    <string name="createAccount">Crie sua conta</string>
+    <string name="text_buttonLogin">Entrar</string>
+    <string name="msgInputIncorrect">Preencha todos os campos corretamente</string>
+    <string name="msgIncorrectLogin">Número do SUS ou CPF incorretos</string>
+    <string name="text_requirements">Requerimentos</string>
+    <string name="profile">Profile</string>
+    <string name="chat">Bate-Papo</string>
+    <string name="notifications">Notificações</string>
+    <string name="about_us">Sobre Nós</string>
+    <string name="log_out">Sair</string>
+    <string name="name">Nome: </string>
+</resources>

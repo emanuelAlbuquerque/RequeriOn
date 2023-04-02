@@ -20,6 +20,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/baseline_health_and_safety_24" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +36,7 @@
             android:gravity="center"
             android:text="@string/activityLoginTitle"
             android:textColor="@color/white"
-            android:textSize="34sp"
+            android:textSize="30sp"
             tools:ignore="MissingConstraints" />
     </LinearLayout>
 
@@ -72,7 +80,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_email"
+        app:layout_constraintTop_toBottomOf="@+id/textView_sus"
         android:importantForAutofill="no"
         tools:ignore="VisualLintTextFieldSize" />
 
@@ -94,7 +102,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ed_sus" />
 
     <TextView
-        android:id="@+id/textView_email"
+        android:id="@+id/textView_sus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"

@@ -56,7 +56,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Apresentamos o aplicativo RequeriOn, uma solução inovadora para ajudar a reduzir o índice de absenteísmo dos pacientes em consultas e exames regulados. Sabemos que muitas pessoas perdem a oportunidade de receber o tratamento de que precisam por causa de faltas pela falta de atualizações ou o tempo levado para marcar as consultas em compromissos médicos. "
-                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
@@ -65,7 +64,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Com o RequeriOn, isso não precisa mais acontecer. Nosso aplicativo é fácil de usar e oferece uma variedade de recursos para ajudar os pacientes a gerenciar os seus requerimentos, podendo ver se já foi marcado ou não. A interface intuitiva permite que os usuários vejam suas consultas e exames agendados em um só lugar, com lembretes personalizados para ajudá-los a não esquecer."
-                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
@@ -74,7 +72,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Além disso, o RequeriOn permite que os pacientes reagendem suas consultas ou exames ou até mesmo cancelar com apenas alguns toques na tela, tornando mais fácil para eles se adaptarem a mudanças de horários ou imprevistos. Com nossa tecnologia de notificação em tempo real, os pacientes são informados rapidamente de quaisquer alterações em seus agendamentos."
-                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
@@ -83,7 +80,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Não importa se você é um paciente que precisa se organizar melhor ou um profissional de saúde que busca reduzir o absenteísmo de seus pacientes, o RequeriOn é a escolha certa. Nosso aplicativo foi projetado para ajudar a melhorar a qualidade dos cuidados de saúde, tornando os processos mais eficientes e reduzindo as taxas de absenteísmo. Experimente o RequeriOn hoje mesmo e veja como podemos ajudá-lo a ter uma vida mais saudável e organizada."
-                android:textColor="@color/black"
                 android:textSize="16sp" />
         </LinearLayout>
     </ScrollView>

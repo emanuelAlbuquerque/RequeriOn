@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
             val numberIsDone = binding.edSus.isDone
             val cpfIsDone = binding.edCpf.isDone
 
-            val susMokado = "000000000001111"
-            val cpfMokado = "11382391439"
+            val susMokado = "000000000000000"
+            val cpfMokado = "00000000000"
 
             if(numberIsDone && cpfIsDone){
                 if(inputNumberSus.unMasked == susMokado && inputCpf.unMasked == cpfMokado){

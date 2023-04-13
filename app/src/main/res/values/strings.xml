@@ -16,4 +16,8 @@
     <string name="about_us">About Us</string>
     <string name="log_out">Log Out</string>
     <string name="name">Name: </string>
+    <string name="about_p1">Introducing the RequeriOn app, an innovative solution to help reduce patient absenteeism in scheduled appointments and exams. We know that many people miss out on getting the treatment they need because of absences due to lack of updates or the time taken to make appointments for medical appointments. </string>
+    <string name="about_p2">With RequeriOn, this no longer has to happen. Our app is easy to use and offers a variety of features to help patients manage their claims, whether they have been booked or not. The intuitive interface allows users to see their scheduled appointments and exams in one place, with personalized reminders to help them remember.</string>
+    <string name="about_p3">In addition, RequeriOn allows patients to reschedule their appointments or exams or even cancel with just a few taps on the screen, making it easier for them to adapt to changing schedules or unforeseen circumstances. With our real-time notification technology, patients are quickly informed of any changes to their appointments.</string>
+    <string name="about_p4">It doesn\'t matter if you are a patient who needs to get better organized or a healthcare professional looking to reduce absenteeism for your patients, RequeriOn is the right choice. Our app is designed to help improve the quality of healthcare by making processes more efficient and reducing absenteeism rates. Try RequeriOn today and see how we can help you live a healthier, more organized life.</string>
 </resources>

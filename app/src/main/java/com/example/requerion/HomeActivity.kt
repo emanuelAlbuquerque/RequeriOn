@@ -23,7 +23,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val nameUser = "José Emanuel da Silva Souza Albuquerque"
+        val nameUser = "Admin"
         val edNameUser = binding.nameUser
         edNameUser.text = "${edNameUser.text} $nameUser"
 

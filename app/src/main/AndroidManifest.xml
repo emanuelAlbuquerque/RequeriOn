@@ -12,6 +12,14 @@
         android:theme="@style/Theme.RequeriOn"
         tools:targetApi="31">
         <activity
+            android:name=".RequerimentsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_requeriments"
+            android:theme="@style/Theme.RequeriOn.NoActionBar" />
+        <activity
+            android:name=".RequirementsActivity"
+            android:exported="false" />
+        <activity
             android:name=".AboutActivity"
             android:exported="false" />
         <activity

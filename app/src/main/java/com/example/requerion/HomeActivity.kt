@@ -23,6 +23,11 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        fun handleClickRequerimentsActivity(){
+            val intent = Intent(this, RequerimentsActivity::class.java)
+            startActivity(intent)
+        }
+
         val nameUser = "Admin"
         val edNameUser = binding.nameUser
         edNameUser.text = "${edNameUser.text} $nameUser"
@@ -38,6 +43,10 @@ class HomeActivity : AppCompatActivity() {
 
         binding.cardAbout.setOnClickListener{
             handleClickAboutActivity()
+        }
+
+        binding.cardReq.setOnClickListener{
+            handleClickRequerimentsActivity()
         }
 
     }

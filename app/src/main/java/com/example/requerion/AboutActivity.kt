@@ -3,7 +3,6 @@ package com.example.requerion
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.requerion.databinding.ActivityAboutBinding
-import com.example.requerion.databinding.ActivityHomeBinding
 
 class AboutActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAboutBinding

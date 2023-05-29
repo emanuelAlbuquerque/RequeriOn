@@ -3,32 +3,63 @@ package com.example.requerion
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.example.requerion.databinding.ActivityMainBinding
-import com.example.requerion.databinding.ActivityRequeriments2Binding
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import android.view.View
+import android.widget.Button
+import com.google.firebase.database.*
 
 class RequerimentsActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityRequeriments2Binding
+    private lateinit var reqRecyclerView: RecyclerView
+    private lateinit var reqList: ArrayList<RequerimentsModelo>
+    private lateinit var dbRef: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRequeriments2Binding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_requeriments2)
 
-        val sus = binding.textViewSUS
-        val number = binding.textViewNumberReq
-        val espec = binding.textViewEspec
-        val data = binding.textViewData
+        reqRecyclerView = findViewById(R.id.reqList)
+        reqRecyclerView.layoutManager = LinearLayoutManager(this)
+        reqRecyclerView.setHasFixedSize(true)
 
-        sus.text = intent.getStringExtra("numeroSUS")
-        number.text = intent.getStringExtra("numberReq")
-        espec.text = intent.getStringExtra("especialidadeReq")
-        data.text = intent.getStringExtra("dataReq")
+        reqList = arrayListOf<RequerimentsModelo>()
 
+        getEmployeesData()
 
-        binding.btCadastar.setOnClickListener{
+        val buttonCadastrar: Button = findViewById(R.id.btCadastar)
+
+        buttonCadastrar.setOnClickListener{
             val intent = Intent(this, RegisterRequerimentsActivity::class.java)
-            startActivity(intent)
-        }
+          startActivity(intent)
+         }
 
+    }
+    private fun getEmployeesData() {
+
+        reqRecyclerView.visibility = View.GONE
+
+        dbRef = FirebaseDatabase.getInstance().getReference("Requerimento")
+
+        dbRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                reqList.clear()
+                if (snapshot.exists()){
+                    for (empSnap in snapshot.children){
+                        val reqData = empSnap.getValue(RequerimentsModelo::class.java)
+                        reqList.add(reqData!!)
+                    }
+
+                    val mAdapter = RequerimentsAdapter(reqList)
+                    reqRecyclerView.adapter = mAdapter
+
+                    reqRecyclerView.visibility = View.VISIBLE
+
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+        })
     }
 }

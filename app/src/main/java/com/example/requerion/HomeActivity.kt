@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.example.requerion.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -28,12 +29,13 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val numberSusUser = intent.getStringExtra("numeroSUS")
         val nameUser = "Admin"
-        val edNameUser = binding.nameUser
-        edNameUser.text = "${edNameUser.text} $nameUser"
+
+        val textViewNameUser = binding.nameUser
+        textViewNameUser.text = "${textViewNameUser.text} $nameUser"
 
         val textViewNumberSUS = binding.numberSUS
-        val numberSusUser = intent.getStringExtra("numeroSUS")
         textViewNumberSUS.text = "SUS: $numberSusUser"
 
 

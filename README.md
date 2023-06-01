@@ -22,28 +22,36 @@ Primeira fase do projeto desenvolvido com o intuito de fornecer uma solução pa
 - Navegação entre telas com transferindo informação
 - Ser desenvolvida em Kotlin
 
+#### Fase 02:
+
+- Desenvolver tela de Cadastro (2,0 pontos) 
+- Implementar o cadastro no banco de dados FireBase (cadastro de usuários, vagas, pacientes, veículos, serviços, por exemplo... ao menos um objeto/ utilizar data class na implementação) (3,0 pontos) 
+- Criar tela para lista dados cadastrado no banco ( com RecyclerView e cardView) (2,0 Pontos) 
+- Implementar a consulta via banco dos dados cadastrados (com adapter personalizado)  (3,0 pontos
+
 ## 🎨 Layout
 
 - Login
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column;">
-  <img alt="Tela de login" src="https://github.com/emanuelAlbuquerque/RequeriOn/blob/master/app/src/main/res/img-layout/Login.jpg">
-</p>
+ <img alt="Tela de login" src="https://github.com/emanuelAlbuquerque/RequeriOn/blob/master/app/src/main/res/img-layout/Login.jpg" style="width: 400px; height: 800px">
 
 - Home
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column;">
-  <img alt="Tela de home" src="https://github.com/emanuelAlbuquerque/RequeriOn/blob/master/app/src/main/res/img-layout/Home.jpg">
-</p>
+<img alt="Tela de home" src="https://github.com/emanuelAlbuquerque/RequeriOn/blob/master/app/src/main/res/img-layout/Home.jpg" style="width: 400px; height: 800px">
 
 - About
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column;">
-  <img alt="Tela de home" src="https://github.com/emanuelAlbuquerque/RequeriOn/blob/master/app/src/main/res/img-layout/About.jpg">
-</p>
+<img alt="Tela de home" src="https://github.com/emanuelAlbuquerque/RequeriOn/blob/master/app/src/main/res/img-layout/About.jpg" style="width: 400px; height: 800px">
+
+- Requeriments Register
+<img alt="Tela de home" src="https://github.com/emanuelAlbuquerque/RequeriOn/blob/master/app/src/main/res/img-layout/register_requeriments.jpg" style="width: 400px; height: 800px">
+
+- Requeriments List
+<img alt="Tela de home" src="https://github.com/emanuelAlbuquerque/RequeriOn/blob/master/app/src/main/res/img-layout/requeriments_list.jpg" style="width: 400px; height: 800px">
 
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - Kotlin <img align="center" alt="Emanuel-HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg">
+- Firebase <img align="center" alt="Emanuel-HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg">
 - XML
 
 ## 🚀 Como executar o projeto
